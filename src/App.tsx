@@ -1,9 +1,15 @@
 import React from 'react'
+import { useState } from 'react'
+import type {LangId} from './Types'
 
 const App = () => {
+  const [inputText, setInputText] = useState('')
+  const [outputText, setOutputText] = useState('')
+  const [sourceLang, setSourceLang] = useState<LangId | null>(null)
+  const [targetLang, setTargetLang] = useState<LangId | null>(null)
   return (
     <div>
-      <h1 className='bg-amber-300'>ddd</h1>
+
     </div>
   )
 }
