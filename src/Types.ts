@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const ALL_LANGUAGES = [
+export const ALL_LANGUAGES = [
   { id: 'detect', name: 'Detect Language', isDetect: true },
   { id: 'en', name: 'English' },
   { id: 'fr', name: 'French' },
@@ -12,3 +12,17 @@ const ALL_LANGUAGES = [
 type LangType = typeof ALL_LANGUAGES[number]
 
 export type LangId = LangType['id']
+
+export type JSONValue =
+    | null
+    | boolean
+    | number
+    | string
+    | JSONValue[]
+    | { [key: string]: JSONValue }
+;
+
+
+
+
+
