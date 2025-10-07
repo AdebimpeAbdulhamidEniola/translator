@@ -92,7 +92,7 @@ const App = () => {
   };
 
   return (
-    <div className=" bg-[url('/resources/hero_img-sm.jpg')] xl:bg-[url('/resources/hero_img.jpg')] w-screen h-screen bg-no-repeat bg-cover bg-center pt-4 ">
+    <div className=" bg-[url('/resources/hero_img-sm.jpg')] xl:bg-[url('/resources/hero_img.jpg')] min-w-screen h-screen bg-no-repeat bg-cover bg-center pt-4 ">
 
       <div  className="">
         <img src={'/resources/logo.svg'}  className="mx-auto"/>
