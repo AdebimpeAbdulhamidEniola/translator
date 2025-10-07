@@ -13,14 +13,20 @@ type LangType = typeof ALL_LANGUAGES[number]
 
 export type LangId = LangType['id']
 
-export type JSONValue =
-    | null
-    | boolean
-    | number
-    | string
-    | JSONValue[]
-    | { [key: string]: JSONValue }
-;
+export type APIResponse = {
+  responseData: {
+    translatedText: string
+  }
+}
+
+export const DropDownLanguages = [
+  { id: 'es', name: 'Spanish' },
+  { id: 'de', name: 'German' },
+  { id: 'it', name: 'Italian' },
+  {id: 'ar', name:'Arabic'}
+] as const
+
+
 
 
 
