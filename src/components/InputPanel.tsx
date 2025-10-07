@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import  { useContext, useRef } from "react";
 import LanguageSelector from "./LanguageSelector";
 import TranslatorContext from "../store/TranslatorContext";
 

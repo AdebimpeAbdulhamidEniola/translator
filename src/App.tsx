@@ -1,4 +1,3 @@
-import React, {} from "react";
 import { useState } from "react";
 import type { APIResponse, LangId } from "./Types";
 import InputPanel from "./components/InputPanel";

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import TranslatorContext from "../store/TranslatorContext";
 import { DropDownLanguages, type LangId } from "../Types";
 const LanguageSelector = ({ type }: { type: "source" | "target" }) => {
