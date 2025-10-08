@@ -1,6 +1,6 @@
 
 export const ALL_LANGUAGES = [
-  { id: 'detect', name: 'Detect Language', isDetect: true },
+  { id: '', name: 'Detect Language' },
   { id: 'en', name: 'English' },
   { id: 'fr', name: 'French' },
   { id: 'es', name: 'Spanish' },

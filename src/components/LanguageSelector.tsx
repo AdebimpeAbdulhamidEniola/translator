@@ -30,7 +30,8 @@ const LanguageSelector = ({ type }: { type: "source" | "target" }) => {
   if (type == "source")
     detectLangButton = (
       <button className={`px-4 py-2 hover:rounded-lg hover:bg-[#4d5562]`}
-      aria-label="detect language">
+      aria-label="detect language"
+       onClick={() => langselectHandler("")}>
         Detect Language
       </button>
     );
