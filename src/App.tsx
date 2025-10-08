@@ -10,7 +10,7 @@ const App = () => {
     "My name is Abdulhamid Eniola Adebimpe"
   );
   const [outputText, setOutputText] = useState<APIResponse | null>(null);
-  const [sourceLang, setSourceLang] = useState<LangId>("");
+  const [sourceLang, setSourceLang] = useState<LangId>("en");
   const [targetLang, setTargetLang] = useState<LangId | null>(null);
   const [isTranslating, setIsTranslating] = useState<boolean>(false);
   const [hasSwap, setHasSwap] = useState(false);
