@@ -12,8 +12,9 @@ const OutputPanel = () => {
           <button
             className="ml-auto transition-colors hover:bg-[#4d5562] rounded-lg px-4 py-2 border-gray-200/20 border-2 cursor-pointer"
             onClick={handleSwap}
+            aria-label="swap text"
           >
-            <img src="/resources/Horizontal_top_left_main.svg" />
+            <img src="/resources/Horizontal_top_left_main.svg" alt="click to swap text" />
           </button>
         </div>
         <hr className="text-[#706f6f]" />

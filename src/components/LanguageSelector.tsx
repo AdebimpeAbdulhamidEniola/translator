@@ -29,7 +29,8 @@ const LanguageSelector = ({ type }: { type: "source" | "target" }) => {
 
   if (type == "source")
     detectLangButton = (
-      <button className={`px-4 py-2 hover:rounded-lg hover:bg-[#4d5562]`}>
+      <button className={`px-4 py-2 hover:rounded-lg hover:bg-[#4d5562]`}
+      aria-label="detect language">
         Detect Language
       </button>
     );
@@ -42,6 +43,7 @@ const LanguageSelector = ({ type }: { type: "source" | "target" }) => {
           selectedLang === "en" ? "bg-[#4d5562]" : ""
         }`}
         onClick={() => langselectHandler("en")}
+        aria-label="english"
       >
         English
       </button>
@@ -50,6 +52,7 @@ const LanguageSelector = ({ type }: { type: "source" | "target" }) => {
           selectedLang === "fr" ? "bg-[#4d5562]" : ""
         }`}
         onClick={() => langselectHandler("fr")}
+        aria-label="French"
       >
         French
       </button>

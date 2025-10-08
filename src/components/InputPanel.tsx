@@ -1,4 +1,4 @@
-import  { useContext, useRef } from "react";
+import { useContext, useRef } from "react";
 import LanguageSelector from "./LanguageSelector";
 import TranslatorContext from "../store/TranslatorContext";
 
@@ -12,13 +12,12 @@ const InputPanel = () => {
   } = useContext(TranslatorContext);
   const textRef = useRef<HTMLTextAreaElement>(null);
 
-  const handleCopy = ( ) => {
+  const handleCopy = () => {
     if (textRef.current) {
-      textRef.current.select()
-      document.execCommand('copy')
-
+      textRef.current.select();
+      document.execCommand("copy");
     }
-  }
+  };
 
   const languages = {
     en: "en-us",
@@ -48,12 +47,16 @@ const InputPanel = () => {
           <LanguageSelector type={"source"} />
         </div>
         <hr className="text-[#706f6f]" />
+        <label htmlFor="inputText" className="sr-only">
+          Enter text to translate
+        </label>
         <textarea
           className="px-4 w-full h-50 resize-y min-h-[100px] text-white focus:outline-none flex-1"
           maxLength={500}
           value={inputText}
           ref={textRef}
           onChange={inputTextHandler}
+          id="inputText"
         />
 
         <p className="text-[#d2d5da]/75 text-right text-sm mr-8">{`${inputText.length} / 500 `}</p>
@@ -61,21 +64,28 @@ const InputPanel = () => {
           <button
             className="rounded-lg px-4 py-2 transition-colors hover:bg-[#4d5562] border-gray-200/20 border-2 cursor-pointer mr-3"
             onClick={handleSpeak}
+            aria-label="hear text"
           >
-            <img src="/resources/sound_max_fill.svg" />
+            <img
+              src="/resources/sound_max_fill.svg"
+              alt="click to hear the text"
+            />
           </button>
 
-          <button className="transition-colors hover:bg-[#4d5562] rounded-lg px-4 py-2 border-gray-200/20 border-2 cursor-pointer"
-          onClick={handleCopy}
+          <button
+            className="transition-colors hover:bg-[#4d5562] rounded-lg px-4 py-2 border-gray-200/20 border-2 cursor-pointer"
+            onClick={handleCopy}
+            aria-label="copy text"
           >
-            <img src="/resources/Copy.svg" />
+            <img src="/resources/Copy.svg" alt="click to copy" />
           </button>
 
           <button
             className="ml-auto mr-8 transition-colors bg-[#263FA9] rounded-lg px-4 py-2 text-white inline-flex gap-3 border-gray-200/20 border-1 hover:border-gray-100 cursor-pointer"
             onClick={handleTranslate}
+            aria-label="Translate text"
           >
-            <img src="/resources/Sort_alfa.svg" />
+            <img src="/resources/Sort_alfa.svg" alt="" />
             {isTranslating ? "Translating" : "Translate"}
           </button>
         </div>

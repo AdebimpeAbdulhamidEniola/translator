@@ -95,7 +95,7 @@ const App = () => {
     <div className=" bg-[url('/resources/hero_img-sm.jpg')] xl:bg-[url('/resources/hero_img.jpg')] overflow-scroll min-w-screen min-h-screen bg-no-repeat bg-cover bg-center pt-4 ">
 
       <div  className="">
-        <img src={'/resources/logo.svg'}  className="mx-auto"/>
+        <img src={'/resources/logo.svg'}  className="mx-auto" alt="logo"/>
       </div>
       <div className="gap-4 px-4 flex flex-col justify-center  xl:flex-row xl:items-start xl:pt-32">
         <TranslatorContext.Provider
