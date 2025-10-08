@@ -92,7 +92,7 @@ const App = () => {
   };
 
   return (
-    <div className=" bg-[url('/resources/hero_img-sm.jpg')] xl:bg-[url('/resources/hero_img.jpg')] overflow-scroll min-w-screen min-h-screen bg-no-repeat bg-cover bg-center pt-4 ">
+    <div className=" bg-[url('/resources/hero_img-sm.jpg')] xl:bg-[url('/resources/hero_img.jpg')] overflow-scroll min-w-screen min-h-screen bg-no-repeat bg-cover bg-center pt-4 xl:overflow-hidden ">
 
       <div  className="">
         <img src={'/resources/logo.svg'}  className="mx-auto" alt="logo"/>

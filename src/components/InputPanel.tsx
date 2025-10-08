@@ -69,6 +69,7 @@ const InputPanel = () => {
             <img
               src="/resources/sound_max_fill.svg"
               alt="click to hear the text"
+              className="w-full h-auto"
             />
           </button>
 
@@ -77,7 +78,7 @@ const InputPanel = () => {
             onClick={handleCopy}
             aria-label="copy text"
           >
-            <img src="/resources/Copy.svg" alt="click to copy" />
+            <img src="/resources/Copy.svg" alt="click to copy" className="w-full h-auto"/>
           </button>
 
           <button
@@ -85,7 +86,7 @@ const InputPanel = () => {
             onClick={handleTranslate}
             aria-label="Translate text"
           >
-            <img src="/resources/Sort_alfa.svg" alt="" />
+            <img src="/resources/Sort_alfa.svg" alt="" className="w-full h-auto"/>
             {isTranslating ? "Translating" : "Translate"}
           </button>
         </div>

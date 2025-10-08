@@ -14,7 +14,7 @@ const OutputPanel = () => {
             onClick={handleSwap}
             aria-label="swap text"
           >
-            <img src="/resources/Horizontal_top_left_main.svg" alt="click to swap text" />
+            <img src="/resources/Horizontal_top_left_main.svg" alt="click to swap text"className="w-full h-auto" />
           </button>
         </div>
         <hr className="text-[#706f6f]" />
