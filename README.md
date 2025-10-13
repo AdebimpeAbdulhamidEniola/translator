@@ -98,8 +98,8 @@ Tell me which extras you want and I will add them.
 
 Desktop view:
 
-![Desktop screenshot](translator/public/screenshots/desktop.png)
+![Desktop screenshot](public/screenshots/desktop.png)
 
 Mobile view:
 
-![Mobile screenshot](translator/public/screenshots/mobile.png)
+![Mobile screenshot](public/screenshots/mobile.png)
